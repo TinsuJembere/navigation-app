@@ -1,0 +1,69 @@
+{
+  "maps": [
+    {
+      "id": "1759220214326-yq7vntd9g7c",
+      "name": "Jimma, Oromia Region, Ethiopia",
+      "sizeMb": 400,
+      "downloadedAt": "2025-09-30T08:16:54.326Z",
+      "imageUrl": null,
+      "bbox": [
+        36.6878779,
+        7.5156152,
+        37.0078779,
+        7.8356152
+      ]
+    },
+    {
+      "id": "1759299730412-b0588fihya4",
+      "name": "Edna Mall, BL_03_646 Street, Ghiliffalegn Stream, Bole, Addis Ababa, 7966, Ethiopia",
+      "sizeMb": 80,
+      "downloadedAt": "2025-10-01T06:22:10.412Z",
+      "imageUrl": null,
+      "bbox": [
+        38.786431,
+        8.9968324,
+        38.7868915,
+        8.9973926
+      ]
+    },
+    {
+      "id": "1759299752833-of35n4cgfi",
+      "name": "Edna Mall, BL_03_646 Street, Ghiliffalegn Stream, Bole, Addis Ababa, 7966, Ethiopia",
+      "sizeMb": 80,
+      "downloadedAt": "2025-10-01T06:22:32.834Z",
+      "imageUrl": null,
+      "bbox": [
+        38.786431,
+        8.9968324,
+        38.7868915,
+        8.9973926
+      ]
+    },
+    {
+      "id": "1759299769239-z4jk1etcv9k",
+      "name": "Oromia Region, Ethiopia",
+      "sizeMb": 400,
+      "downloadedAt": "2025-10-01T06:22:49.239Z",
+      "imageUrl": null,
+      "bbox": [
+        34.145517,
+        3.5094475,
+        42.9807986,
+        10.3913094
+      ]
+    },
+    {
+      "id": "1759301696556-9sm0vgo2rtb",
+      "name": "Edna Mall, BL_03_646 Street, Ghiliffalegn Stream, Bole, Addis Ababa, 7966, Ethiopia",
+      "sizeMb": 80,
+      "downloadedAt": "2025-10-01T06:54:56.556Z",
+      "imageUrl": null,
+      "bbox": [
+        38.786431,
+        8.9968324,
+        38.7868915,
+        8.9973926
+      ]
+    }
+  ]
+}

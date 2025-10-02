@@ -1,0 +1,230 @@
+@import "tailwindcss";
+
+/* SmartGuide Home UI styles */
+:root {
+  --sg-bg: #f6f7fb;
+  --sg-card: #ffffff;
+  --sg-muted: #6b7280;
+  --sg-text: #0f172a;
+  --sg-primary: #2563eb;
+  --sg-ring: #dbeafe;
+  --sg-border: #e5e7eb;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+  --sg-bg: #0f172a;
+  --sg-card: #1e293b;
+  --sg-muted: #94a3b8;
+  --sg-text: #f8fafc;
+  --sg-primary: #3b82f6;
+  --sg-ring: #1e40af;
+  --sg-border: #334155;
+}
+
+/* Dark mode map tiles styling */
+[data-theme="dark"] .dark-map-tiles {
+  filter: brightness(0.8) contrast(1.2) invert(0.1);
+}
+
+.sg-wrapper {
+  min-height: 100vh;
+  background: var(--sg-bg);
+  color: var(--sg-text);
+  display: flex;
+  flex-direction: column;
+}
+
+.sg-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--sg-border);
+  background: #fff;
+}
+
+.sg-logo {
+  font-weight: 700;
+  color: var(--sg-primary);
+}
+
+.sg-header-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--sg-border);
+  padding: 8px 12px;
+  border-radius: 9999px;
+  color: #111827;
+}
+
+.sg-main {
+  padding: 24px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sg-search {
+  display: flex;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid var(--sg-border);
+  border-radius: 9999px;
+  padding: 8px 8px 8px 16px;
+}
+
+.sg-search-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+}
+.sg-search-input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+.sg-search-btn {
+  background: var(--sg-primary);
+  color: #fff;
+  border-radius: 9999px;
+  padding: 10px 16px;
+  border: none;
+}
+
+.sg-modes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0 8px;
+}
+.sg-mode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid var(--sg-border);
+  border-radius: 16px;
+  color: #111827;
+}
+.sg-mode.active {
+  box-shadow: 0 0 0 3px var(--sg-ring);
+}
+
+.sg-location h2 {
+  margin: 16px 0 10px;
+  font-size: 16px;
+}
+.sg-map {
+  background: linear-gradient(180deg, #e5efff, #eef2ff);
+  border: 1px solid var(--sg-border);
+  border-radius: 12px;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+.sg-map::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(#c7d2fe 1px, transparent 1px);
+  background-size: 20px 20px;
+  opacity: 0.5;
+}
+.sg-map-marker {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--sg-primary);
+}
+
+.sg-suggestions h3 {
+  margin: 18px 0 12px;
+  font-size: 16px;
+}
+.sg-suggestions-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+@media (min-width: 720px) {
+  .sg-suggestions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.sg-suggestion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid var(--sg-border);
+  border-radius: 12px;
+}
+.sg-suggestion-icon {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  background: #eff6ff;
+  color: var(--sg-primary);
+  border-radius: 9999px;
+}
+.sg-suggestion-title {
+  font-weight: 600;
+}
+.sg-suggestion-sub {
+  color: var(--sg-muted);
+  font-size: 12px;
+}
+
+.sg-bottom-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 12px 24px;
+  background: #fff;
+  border-top: 1px solid var(--sg-border);
+}
+.sg-bottom-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #111827;
+}
+.sg-bottom-item.active {
+  color: var(--sg-primary);
+}
+
+.sg-footer {
+  background: #fff;
+  border-top: 1px solid var(--sg-border);
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.sg-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.sg-footer-links a {
+  color: #111827;
+  font-size: 14px;
+}
+.sg-footer-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
