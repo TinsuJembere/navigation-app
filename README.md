@@ -1,4 +1,6 @@
 SmartGuide - Advanced Navigation & Mapping Web Application
+live: https://navigation-app-neon.vercel.app
+video demo: https://youtu.be/Uf2H7wbHzfc
 A Complete Navigation Solution with Offline Capabilities and Voice Assistance
 ________________________________________
 🎯 Project Overview
