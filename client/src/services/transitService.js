@@ -1,6 +1,6 @@
 // Transit Service - Fetches real-time transit data
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://navigation-app-2.onrender.com";
 
 class TransitService {
   constructor() {
