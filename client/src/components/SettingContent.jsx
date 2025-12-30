@@ -20,7 +20,7 @@ const getInitialTheme = () => {
       }
     }
   } catch {}
-  return "dark";
+  return "light";
 };
 
 export function SettingsProvider({ children }) {
